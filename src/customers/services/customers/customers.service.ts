@@ -10,14 +10,15 @@ export class CustomersService {
             id: 1,
             email: 'test@gmail.com',
             name: 'bobo',
-        }
-    ]
+        },
+    ];
+
     findCustomerById(id: number) {
         return this.customers.find((user) => user.id === id);
     }
 
     createCustomer(customerDto: createCustomerDto) {
-        this.customers.push(customerDto)
+        this.customers.push(customerDto);
     }
 
     getCustomer() {
